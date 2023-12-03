@@ -57,6 +57,27 @@
 # Hamza = Marksheet()
 
 # ============= Inheritance ===================
+# class A:
+#     def __init__(self):
+#         self.name = 'Hamza Kamelen'
+#     def CompSci(self):
+#         self.CompSci = 50
+#     def English(self):
+#         self.English = 60
+#     def OOP(self):
+#         self.OOP = 70
+# class B(A):
+#     def __init__(self):
+#         pass
+#     def Maths(self):
+#         self.Maths = 50
+#     def Urdu(self):
+#         self.Urdu = 60
+#     def Science(self):
+#         self.Science = 70
+# H = B()
+# H.English()
+# ----------------------------
 # class Vehicle:
 #     def __init__(self):
 #         self.color = 'black'
@@ -81,6 +102,7 @@
 # HamzaBike.EngineSpec() 
 # HamzaBike.ShowOutput()
 # print(HamzaBike.number)
+# ----------------------------
 
 # class Vehicle:
 #     def __init__(self):
@@ -128,3 +150,8 @@
 
 # -------------------------------------
 
+sum = 0
+for i in range(1,10):
+    num = int(input(f'Enter {i} Number: '))
+    sum+=num
+print(f'Sum of First 10 Numbers: {sum}')
