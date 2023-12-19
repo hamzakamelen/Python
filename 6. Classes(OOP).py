@@ -150,8 +150,3 @@
 
 # -------------------------------------
 
-sum = 0
-for i in range(1,10):
-    num = int(input(f'Enter {i} Number: '))
-    sum+=num
-print(f'Sum of First 10 Numbers: {sum}')
