@@ -82,3 +82,24 @@ def StudentName(msg):
     print(msg)
 
 StudentName("Hamzaaaaa")
+
+# -----------------------
+class decoratingClass:
+    def __init__(self,func):
+        self.func =func
+    def __call__(self,a,b):
+        print(f"{self.func.__name__} Function")
+        result = self.func(self,a,b)
+        print(f"Result of {self.func.__name__} is {result}")
+    
+class Decorate:
+    @decoratingClass
+    def add(self,a,b):
+        return a + b
+    @decoratingClass
+    def subtract(self,a,b):
+        return a - b
+    
+abc = Decorate()
+abc.add(5,2)
+abc.subtract(5,3)

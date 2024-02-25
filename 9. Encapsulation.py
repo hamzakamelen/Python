@@ -31,6 +31,7 @@ class BankAccount:
         print(f'Current Balance is {self.__balance}')
 
 Account1 = BankAccount('SAMI',2000)
+# print("Access Private method/member",Account1.__balance)
 Account1.deposit(200)
 Account1.withDraw(100)
 Account1.showbalance()
